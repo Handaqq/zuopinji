@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI设计师作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D3748',
+                        secondary: '#4A5568',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-gray-800">DESIGN PORTFOLIO</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-gray-900">首页</a>
+                    <a href="#works" class="text-gray-600 hover:text-gray-900">作品</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">关于</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">联系</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏展示区 -->
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                        创造有意义的<br/>数字体验
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        UI/UX设计师，专注于创造美观且实用的数字产品体验
+                    </p>
+                    <a href="#works" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                        查看作品
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
+                         alt="Hero Image" 
+                         class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="works" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">精选作品</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 作品1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3" 
+                         alt="Project 1" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-white text-xl font-bold mb-2">电商App设计</h3>
+                            <p class="text-gray-200">UI设计 / 用户体验 / 品牌设计</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" 
+                         alt="Project 2" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-white text-xl font-bold mb-2">社交媒体平台</h3>
+                            <p class="text-gray-200">交互设计 / 视觉设计 / 原型设计</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" 
+                         alt="Project 3" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-white text-xl font-bold mb-2">金融Dashboard</h3>
+                            <p class="text-gray-200">数据可视化 / UI设计 / 用户研究</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" 
+                         alt="Project 4" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-white text-xl font-bold mb-2">旅行App设计</h3>
+                            <p class="text-gray-200">UI设计 / 交互设计 / 动效设计</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" 
+                         alt="Project 5" 
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-white text-xl font-bold mb-2">智能家居控制台</h3>
+                            <p class="text-gray-200">UI设计 / 交互设计 / 用户体验</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8" 
+                         alt="About Me" 
+                         class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">关于我</h2>
+                    <p class="text-gray-600 mb-6">
+                        我是一名拥有5年经验的UI/UX设计师，专注于创造美观且实用的数字产品体验。我相信好的设计应该是简单、直观且能解决实际问题的。
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold mb-2">技能专长</h3>
+                            <ul class="text-gray-600">
+                                <li>UI设计</li>
+                                <li>用户体验</li>
+                                <li>交互设计</li>
+                                <li>原型设计</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-2">设计工具</h3>
+                            <ul class="text-gray-600">
+                                <li>Figma</li>
+                                <li>Sketch</li>
+                                <li>Adobe XD</li>
+                                <li>Principle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">联系我</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <svg class="w-8 h-8 mx-auto mb-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-2">邮箱</h3>
+                        <p class="text-gray-600">design@example.com</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                        <svg class="w-8 h-8 mx-auto mb-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-2">电话</h3>
+                        <p class="text-gray-600">+86 123 4567 8900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 UI设计师作品集. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
